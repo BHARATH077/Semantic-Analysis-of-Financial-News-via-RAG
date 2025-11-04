@@ -60,6 +60,36 @@ Convert financial text data into semantic embeddings using **Sentence Transforme
 
 ---
 
-## 🔮 Next Step (Day 3)
-We will integrate **LangChain** to build the **Retrieval-Augmented Generation pipeline**, which retrieves semantically relevant documents and uses an **LLM** to generate summarized, cited responses.
+# Step 3 — Retrieval-Augmented Generation (RAG) Pipeline
+
+## 🎯 Objective
+Build a **RAG system** that combines **semantic retrieval** (FAISS) with a **language model** to answer queries using real financial documents.
+
+---
+
+## 🧩 Steps Completed
+1. Loaded FAISS index and preprocessed financial document metadata.
+2. Built a custom **FAISS retriever** class:
+   - Retrieves the top-k semantically similar documents for a query.
+3. Integrated a **local LLM** (`google/flan-t5-small`) for summarization and question answering.
+4. Tested the RAG pipeline with example queries:
+   - Query: “Apple quarterly revenue performance”
+   - Output: Contextualized answer based on retrieved news + filings.
+   
+---
+
+## 📁 Key Concepts Learned
+- Retrieval-Augmented Generation (RAG) workflow
+- Connecting **vector embeddings** with LLMs
+- Combining multiple sources for context-aware responses
+- Context concatenation and prompting for summarization
+
+---
+
+## 🔮 Next Step (Day 4)
+We will enhance the RAG system by:
+- Adding **semantic query answering with citations**
+- Cleaning and formatting outputs
+- Ensuring answers are **verifiable and reference their sources**
+
 
